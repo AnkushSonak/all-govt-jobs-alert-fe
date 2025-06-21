@@ -1,5 +1,7 @@
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Link from "next/link";
+
 import { Building2, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -41,27 +43,27 @@ export const Footer = () => {
             <h4 className="font-semibold text-foreground">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/jobs" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/jobs" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   All Jobs
                 </Link>
               </li>
               <li>
-                <Link to="/categories" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/categories" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Job Categories
                 </Link>
               </li>
               <li>
-                <Link to="/states" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/states" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   State-wise Jobs
                 </Link>
               </li>
               <li>
-                <Link to="/admit-cards" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/admit-cards" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Admit Cards
                 </Link>
               </li>
               <li>
-                <Link to="/results" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/results" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Results
                 </Link>
               </li>
@@ -73,27 +75,27 @@ export const Footer = () => {
             <h4 className="font-semibold text-foreground">Popular Categories</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/categories/banking" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/categories/banking" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Banking Jobs
                 </Link>
               </li>
               <li>
-                <Link to="/categories/railways" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/categories/railways" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Railway Jobs
                 </Link>
               </li>
               <li>
-                <Link to="/categories/ssc" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/categories/ssc" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   SSC Jobs
                 </Link>
               </li>
               <li>
-                <Link to="/categories/upsc" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/categories/upsc" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   UPSC Jobs
                 </Link>
               </li>
               <li>
-                <Link to="/categories/police" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                <Link href="/categories/police" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Police Jobs
                 </Link>
               </li>
@@ -129,13 +131,13 @@ export const Footer = () => {
               © 2025 GovJobs Portal. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link to="/privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+              <Link href="/privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+              <Link href="/terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                 Terms of Service
               </Link>
-              <Link to="/contact" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+              <Link href="/contact" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                 Contact Us
               </Link>
             </div>
