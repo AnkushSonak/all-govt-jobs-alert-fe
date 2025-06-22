@@ -3,7 +3,8 @@ import { Calendar, MapPin, Users, ExternalLink, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface Job {
   id: number;
@@ -38,7 +39,7 @@ export const JobCard = ({ job }: JobCardProps) => {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-2">
                 <h3 className="text-lg font-semibold text-foreground truncate">
-                  <Link to={`/jobs/${job.slug}-${job.id}`} className="hover:text-primary transition-colors">
+                  <Link href={`/jobs/${job.slug}-${job.id}`} className="hover:text-primary transition-colors">
                     {job.title}
                   </Link>
                 </h3>
@@ -83,7 +84,7 @@ export const JobCard = ({ job }: JobCardProps) => {
             </div>
           </div>
           <div className="flex items-center space-x-3 flex-shrink-0 ml-4">
-            <Link to={`/jobs/${job.slug}-${job.id}`}>
+            <Link href={`/jobs/${job.slug}-${job.id}`}>
               <Button variant="outline" size="sm">
                 View Details
               </Button>
