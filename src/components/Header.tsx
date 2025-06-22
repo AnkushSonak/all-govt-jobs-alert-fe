@@ -1,5 +1,6 @@
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Building2, Search } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Input } from "@/components/ui/input";
@@ -33,7 +34,7 @@ export const Header = ({
             </div>
             <div>
               <h1 className="text-lg font-bold text-foreground">
-                <Link to="/" aria-label="GovJobs Portal - Home">GovJobs Portal</Link>
+                <Link href="/" aria-label="GovJobs Portal - Home">GovJobs Portal</Link>
               </h1>
               <p className="text-muted-foreground text-xs">Your Gateway to Government Careers</p>
             </div>
@@ -63,22 +64,22 @@ export const Header = ({
 
           <div className="flex items-center gap-4">
             <nav className="hidden md:flex space-x-4 text-sm">
-              <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
+              <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
                 Home
               </Link>
-              <Link to="/jobs" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
+              <Link href="/jobs" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
                 All Jobs
               </Link>
-              <Link to="/categories" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
+              <Link href="/categories" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
                 Categories
               </Link>
-              <Link to="/states" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
+              <Link href="/states" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
                 States
               </Link>
-              <Link to="/admit-cards" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
+              <Link href="/admit-cards" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
                 Admit Cards
               </Link>
-              <Link to="/results" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
+              <Link href="/results" className="text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-accent">
                 Results
               </Link>
             </nav>
